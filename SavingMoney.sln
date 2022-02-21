@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingMoney.WebApi", "SavingMoney.WebApi\SavingMoney.WebApi.csproj", "{D06113C6-196E-4C99-9257-08412F82E047}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingMoney.Tests", "SavingMoney.Tests\SavingMoney.Tests.csproj", "{EBC7D0BD-EE92-402D-AB3E-C0ED1029749F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D06113C6-196E-4C99-9257-08412F82E047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D06113C6-196E-4C99-9257-08412F82E047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D06113C6-196E-4C99-9257-08412F82E047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC7D0BD-EE92-402D-AB3E-C0ED1029749F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC7D0BD-EE92-402D-AB3E-C0ED1029749F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC7D0BD-EE92-402D-AB3E-C0ED1029749F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC7D0BD-EE92-402D-AB3E-C0ED1029749F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
