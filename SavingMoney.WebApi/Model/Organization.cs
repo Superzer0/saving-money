@@ -27,16 +27,16 @@ public class Organization
     /// <summary>
     /// List of organization categories 
     /// </summary>
-    public List<CostCategory> Categories { get; set; }
+    public virtual List<CostCategory> Categories { get; set; }
     
     /// <summary>
     /// List of organization costs 
     /// </summary>
-    public List<Cost> Costs { get; set; }
+    public virtual List<Cost> Costs { get; set; }
     
     /// <summary>
     /// List of organizations predicted costs
     /// </summary>
-    public List<PredictedSubcategoryCost> PredictedSubcategoryCosts { get; set; }
+    public virtual List<PredictedSubcategoryCost> PredictedSubcategoryCosts { get; set; }
     
 }

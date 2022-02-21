@@ -16,7 +16,7 @@ public class CostCategory
     /// Organization Id
     /// </summary>
     [Required]
-    public int OrgId { get; set; }
+    public int OrganizationId { get; set; }
     
     /// <summary>
     /// Category name

@@ -16,7 +16,7 @@ public class Cost
     /// Organization
     /// </summary>
     [Required]
-    public int OrgId { get; set; }
+    public int OrganizationId { get; set; }
 
     /// <summary>
     /// Predicted cost subcategory id

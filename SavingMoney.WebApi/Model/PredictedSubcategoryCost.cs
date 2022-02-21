@@ -13,7 +13,7 @@ public class PredictedSubcategoryCost
     /// Organization
     /// </summary>
     [Required]
-    public int OrgId { get; set; }
+    public int OrganizationId { get; set; }
     
     /// <summary>
     /// Predicted cost subcategory id
