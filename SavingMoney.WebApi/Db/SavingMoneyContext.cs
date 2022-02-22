@@ -1,11 +1,12 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SavingMoney.WebApi.Model;
 
 namespace SavingMoney.WebApi.Db;
 
-public class SavingMoneyContext : DbContext
+public class SavingMoneyContext : IdentityDbContext<OrgUser>
 {
-    public  DbSet<Cost> Costs { get; set; }
+    public DbSet<Cost> Costs { get; set; }
     public DbSet<CostCategory> CostCategories { get; set; }
     public DbSet<CostSubCategory> CostSubCategories { get; set; }
     public DbSet<Organization> Organizations { get; set; }
@@ -13,22 +14,19 @@ public class SavingMoneyContext : DbContext
 
     public string DbPath { get; init; }
 
-    public SavingMoneyContext()
+    public SavingMoneyContext(DbContextOptions<SavingMoneyContext> options)
+        : base(options)
     {
-        var folder = Environment.SpecialFolder.LocalApplicationData;
-        var path = Environment.GetFolderPath(folder);
-        DbPath = Path.Join(path, "SavingMoneyContext.db");
     }
 
+    
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite($"Data Source={DbPath}");
+        optionsBuilder.UseSqlite(SqliteConnectionStringProvider.Get());
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.HasDefaultSchema("SavingMoney");
-
         modelBuilder.Entity<OrgUser>().Ignore("Temporary. Use identity");
 
         modelBuilder.Entity<Organization>().HasKey(p => p.Id);
@@ -94,7 +92,14 @@ public class SavingMoneyContext : DbContext
             .WithMany(p=> p.PredictedSubcategoryCosts)
             .HasForeignKey(p => p.OrganizationId).IsRequired();
 
-        modelBuilder.Entity<OrgUser>()
-            .ToTable("AspNetUsers", t => t.ExcludeFromMigrations());
+        // modelBuilder.Entity<OrgUser>()
+        //     .ToTable("AspNetUsers", t => t.ExcludeFromMigrations());
+        
+        base.OnModelCreating(modelBuilder);
+        
+        modelBuilder.Entity<OrgUser>().HasOne<Organization>()
+            .WithMany(p => p.OrganizationUsers)
+            .HasForeignKey(p => p.OrganizationId).IsRequired();
+        
     }
 }

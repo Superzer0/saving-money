@@ -1,6 +1,13 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
+
 namespace SavingMoney.WebApi.Model;
 
-public class OrgUser
+public class OrgUser : IdentityUser
 {
-    public int Id { get; set; }
+    /// <summary>
+    /// Organization where user is linked 
+    /// </summary>
+    [Required]
+    public int OrganizationId { get; set; }
 }

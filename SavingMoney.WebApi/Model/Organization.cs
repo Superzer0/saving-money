@@ -38,5 +38,7 @@ public class Organization
     /// List of organizations predicted costs
     /// </summary>
     public virtual List<PredictedSubcategoryCost> PredictedSubcategoryCosts { get; set; }
+
+    public virtual List<OrgUser> OrganizationUsers { get; set; }
     
 }
