@@ -19,7 +19,7 @@ public class SavingMoneyContext : IdentityDbContext<OrgUser>
     {
     }
 
-    
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlite(SqliteConnectionStringProvider.Get());
@@ -50,7 +50,8 @@ public class SavingMoneyContext : IdentityDbContext<OrgUser>
         }).IsUnique();
 
         modelBuilder.Entity<CostCategory>()
-            .HasMany<CostSubCategory>().WithOne()
+            .HasMany(p => p.SubCategories)
+            .WithOne()
             .HasForeignKey(p => p.ParentId).IsRequired();
 
         modelBuilder.Entity<CostCategory>()
@@ -77,29 +78,25 @@ public class SavingMoneyContext : IdentityDbContext<OrgUser>
             .WithMany()
             .HasForeignKey(p => p.CostSubCategoryId).IsRequired();
 
-
         modelBuilder.Entity<PredictedSubcategoryCost>().HasKey(p => p.Id);
         modelBuilder.Entity<PredictedSubcategoryCost>().HasIndex(p => new
         {
             p.Id,
             OrgId = p.OrganizationId
         }).IsUnique();
+
         modelBuilder.Entity<PredictedSubcategoryCost>().HasOne<CostSubCategory>()
             .WithMany()
             .HasForeignKey(p => p.CostSubCategoryId).IsRequired();
 
         modelBuilder.Entity<PredictedSubcategoryCost>().HasOne<Organization>()
-            .WithMany(p=> p.PredictedSubcategoryCosts)
+            .WithMany(p => p.PredictedSubcategoryCosts)
             .HasForeignKey(p => p.OrganizationId).IsRequired();
 
-        // modelBuilder.Entity<OrgUser>()
-        //     .ToTable("AspNetUsers", t => t.ExcludeFromMigrations());
-        
         base.OnModelCreating(modelBuilder);
-        
+
         modelBuilder.Entity<OrgUser>().HasOne<Organization>()
             .WithMany(p => p.OrganizationUsers)
             .HasForeignKey(p => p.OrganizationId).IsRequired();
-        
     }
 }

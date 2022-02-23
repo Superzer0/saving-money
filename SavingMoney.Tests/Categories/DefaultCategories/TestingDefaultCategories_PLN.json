@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "Income",
+    "Description": "Our income",
+    "IsIncome": true,
+    "SubCategories": [
+      {
+        "Name": "Income",
+        "Description": "Main income"
+      }
+    ]
+  },
+  {
+    "Name": "Food",
+    "Description": "Food costs",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Home",
+        "Description": "Food at home"
+      },
+      {
+        "Name": "City",
+        "Description": "Food in the city"
+      }
+    ]
+  }
+]

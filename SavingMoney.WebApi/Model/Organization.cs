@@ -18,11 +18,6 @@ public class Organization
     [Required]
     [MaxLength(100)]
     public string Name { get; set; }
-
-    /// <summary>
-    /// List of organization users 
-    /// </summary>
-    // public List<OrgUser> Users { get; set; }
     
     /// <summary>
     /// List of organization categories 
@@ -39,6 +34,8 @@ public class Organization
     /// </summary>
     public virtual List<PredictedSubcategoryCost> PredictedSubcategoryCosts { get; set; }
 
+    /// <summary>
+    /// List of organization users 
+    /// </summary>
     public virtual List<OrgUser> OrganizationUsers { get; set; }
-    
 }

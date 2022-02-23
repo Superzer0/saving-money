@@ -1,0 +1,328 @@
+[
+  {
+    "Name": "Przychody",
+    "Description": "Przychody gospodarstwa domowego",
+    "IsIncome": true,
+    "SubCategories": [
+      {
+        "Name": "Wynagrodzenie",
+        "Description": "Wynagrodzenie głowne"
+      },
+      {
+        "Name": "Wynagrodzenie partnera",
+        "Description": "Drugie wynagrodzenie"
+      },
+      {
+        "Name": "Dotacje państwowe",
+        "Description": "500+, inne programy państwowe"
+      },
+      {
+        "Name": "Sprzedaż",
+        "Description": "Sprzedaż na OLX/Gumtree/Allegro"
+      },
+      {
+        "Name": "Prezenty",
+        "Description": "Otrzymane prezenty pieniężne"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne przychody nie wchodzące w skład "
+      }
+    ]
+  },
+  {
+    "Name": "Jedzenie",
+    "Description": "Koszty związane z jedzeniem",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Dom",
+        "Description": "Jedzenie w domu"
+      },
+      {
+        "Name": "Miasto",
+        "Description": "Jedzenie na mieście"
+      },
+      {
+        "Name": "Praca",
+        "Description": "Jedzenie w pracy"
+      },
+      {
+        "Name": "Alkohol",
+        "Description": "Alko"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki na jedzenie"
+      }
+    ]
+  },
+  {
+    "Name": "Dom",
+    "Description": "Koszty prowadzeniem domu",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Media",
+        "Description": "Gaz, Prąd, Śmieci"
+      },
+      {
+        "Name": "Wyposażenie",
+        "Description": "Nowe meble, inne wyposażenie domu"
+      },
+      {
+        "Name": "Ogród",
+        "Description": "Wydatki związane z ogrodem"
+      },
+      {
+        "Name": "Budżet indywidualny",
+        "Description": "Nie podlegający ocenie"
+      },
+      {
+        "Name": "Naprawy",
+        "Description": "Naprawy zepsutych rzeczy w domu"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki domowe"
+      }
+    ]
+  },
+  {
+    "Name": "Transport",
+    "Description": "Koszty transportu",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Paliwo",
+        "Description": "Paliwo do samochodu"
+      },
+      {
+        "Name": "Naprawy i przeglądy",
+        "Description": "Przeglądy i naprawy samochodu"
+      },
+      {
+        "Name": "Wyposażenie dodatkowe",
+        "Description": "Opony, foteliki, wycieraczki"
+      },
+      {
+        "Name": "Taxi",
+        "Description": "Uber/Bolt/Taxi"
+      },
+      {
+        "Name": "Bilety",
+        "Description": "PKP, MPK itp"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane z transportem"
+      }
+    ]
+  },
+  {
+    "Name": "Telekomunikacja",
+    "Description": "Koszty telekomunikacji",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Telefony",
+        "Description": "Abonament telefony"
+      },
+      {
+        "Name": "Internet",
+        "Description": "Rachunki internet"
+      },
+      {
+        "Name": "Subskrypcje",
+        "Description": "Netflix, Audioteka itp."
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane z internetem i telekomunikacją"
+      }
+    ]
+  },
+  {
+    "Name": "Opieka zdrowotna",
+    "Description": "Koszty zdrowotne",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Lekarz",
+        "Description": "Prywatna wizyta u lekarza"
+      },
+      {
+        "Name": "Badania",
+        "Description": "Zlecone badania"
+      },
+      {
+        "Name": "Lekarstwa",
+        "Description": "Lekarstwa i suplementy"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane ze zdrowiem"
+      }
+    ]
+  },
+  {
+    "Name": "Ubranie",
+    "Description": "Koszty ubioru",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Ubrania",
+        "Description": "Ubrania codzienne"
+      },
+      {
+        "Name": "Ubrania Partner",
+        "Description": "Ubrania codzienne partnera"
+      },
+      {
+        "Name": "Buty",
+        "Description": "Wydatki na buty"
+      },
+      {
+        "Name": "Dodatki",
+        "Description": "Wydatki na dodatki"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane z transportem"
+      }
+    ]
+  },
+  {
+    "Name": "Higiena",
+    "Description": "Koszty higieny i kosmetyków",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Kosmetyki",
+        "Description": "Kosmetyki"
+      },
+      {
+        "Name": "Środki czystości",
+        "Description": "Chemia"
+      },
+      {
+        "Name": "Pielęgnacja - usługi",
+        "Description": ""
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane z higieną"
+      }
+    ]
+  },
+  {
+    "Name": "Dzieci",
+    "Description": "Koszty dzieci",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Kosmetyki",
+        "Description": ""
+      },
+      {
+        "Name": "Ubrania",
+        "Description": "Ubrania dziecięce"
+      },
+      {
+        "Name": "Zabawki/książki",
+        "Description": ""
+      },
+      {
+        "Name": "Opieka nad dziećmi",
+        "Description": "Opiekunki"
+      },
+      {
+        "Name": "Placówki",
+        "Description": "Żłobek/Przedszkole/Szkoła"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane z dziećmi"
+      }
+    ]
+  },
+  {
+    "Name": "Rozrywka",
+    "Description": "Koszty rozrywki",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Wyjazdy",
+        "Description": "Wakacje, wyjazdy weekndowe"
+      },
+      {
+        "Name": "Wyjścia",
+        "Description": "Restauracja, Kino itp"
+      },
+      {
+        "Name": "Książki",
+        "Description": ""
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane z dziećmi"
+      }
+    ]
+  },
+  {
+    "Name": "Dla innych",
+    "Description": "Pieniądze przeznaczane dla innych osób",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Dobroczynność",
+        "Description": "WOŚP, Siepomaga, inne fundacje"
+      },
+      {
+        "Name": "Inne",
+        "Description": "Inne wydatki związane z wydatkami na inne osoby"
+      }
+    ]
+  },
+  {
+    "Name": "Spłata długów",
+    "Description": "Kredyty, chwilówki, pożyczki",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Kredyt hipoteczny",
+        "Description": ""
+      },
+      {
+        "Name": "Ubezpieczenie kredytu",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Name": "Budowanie oszczędności",
+    "Description": "Na wakacje, na czarną godzinę",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Poduszka finansowa",
+        "Description": ""
+      },
+      {
+        "Name": "Nadpłata długów",
+        "Description": ""
+      }
+    ]
+  },
+  {
+    "Name": "INNE",
+    "Description": "Inne wydatki",
+    "IsIncome": false,
+    "SubCategories": [
+      {
+        "Name": "Inne",
+        "Description": ""
+      }
+    ]
+  }
+]

@@ -4,7 +4,7 @@ namespace SavingMoney.WebApi.Model;
 
 public class PredictedSubcategoryCost
 {
-    // <summary>
+    /// <summary>
     /// Entity id
     /// </summary>
     public int Id { get; set; }
