@@ -20,6 +20,12 @@ public class Organization
     public string Name { get; set; }
     
     /// <summary>
+    /// Default currency
+    /// </summary>
+    [Required]
+    public CurrencyType DefaultCurrency { get; set; }
+    
+    /// <summary>
     /// List of organization categories 
     /// </summary>
     public virtual List<CostCategory> Categories { get; set; }

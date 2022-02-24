@@ -10,4 +10,10 @@ public class OrgUser : IdentityUser
     /// </summary>
     [Required]
     public int OrganizationId { get; set; }
+
+    [Required]
+    public string FirstName { get; set; }
+
+    [Required]
+    public string LastName { get; set; }
 }
